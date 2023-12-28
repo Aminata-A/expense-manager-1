@@ -44,7 +44,7 @@ const modifyElement = (element, edit = false) =>{
     let currentExpense = expenditureValue.innerText;
     let parentAmount = parentDiv.querySelector(".amount").innerText;
     if (edit) {
-        let parentText = parentDiv.querySelector("product").innerText;
+        let parentText = parentDiv.querySelector(".product").innerText;
         productTitle.Value = parentText;
         userAmount.value = parentAmount;
         disableButton(true);
@@ -76,12 +76,12 @@ const listCreator = (expenseName, expenseValue) =>{
     sublistContent.appendChild(editButton);
     sublistContent.appendChild(deleteButton);
     document.getElementById("list").appendChild(sublistContent);
-};
+};Function 
 
 //function to add expenses
 
 checkAmountButton.addEventListener("click", () => {
-    //empty cheks
+    //empty checks
     if(!userAmount.value || !productTitle.value){
         productTitleError.classList.remove("hide");
         return false;
@@ -103,3 +103,5 @@ checkAmountButton.addEventListener("click", () => {
     userAmount.value= "";
 
 })
+
+//Function ti add Exepnses
